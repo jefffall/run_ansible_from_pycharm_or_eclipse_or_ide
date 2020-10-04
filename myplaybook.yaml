@@ -1,0 +1,8 @@
+---
+
+
+- hosts: "{{ source }}:{{ destinations }}"
+  tasks:
+  - ping:
+  - debug:
+      msg: Source = {{ source }} destinations = {{ destinations }}
